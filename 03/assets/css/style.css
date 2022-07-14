@@ -1,0 +1,184 @@
+/*Normalize*/
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/*Core styles*/
+
+body {
+    background-color: white;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: normal;
+    color: #070707;
+}
+
+.container {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*Header*/
+
+.nav_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #828282;
+}
+
+.nav_item_link {
+    font-size: 18px;
+    color: #828282;
+}
+
+.nav_item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.nav_item_link.active {
+   color: #070707;
+}
+
+.nav_item_link:hover {
+    color: #070707;
+}
+
+/*Main*/
+
+.site_title {
+    font-weight: bold;
+    margin: 0;
+    
+}
+
+.first_screen {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.about_me {
+    background-color: #F6F6F6;
+    padding-top: 100px;
+}
+
+.text {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 50px 0 100px;
+}
+
+.text_item:not(:last-child) {
+    padding-bottom: 30px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills_item {
+    margin: 100px 0;
+}
+
+.heading_skills {
+    padding-bottom: 50px;
+}
+
+.adobe {
+    width: 100%;
+    max-width: 170px;
+    display: flex;
+    flex-direction: column;
+}
+
+.star {
+    display: flex;
+}
+
+.star_black {
+    width: 26px;
+    height: 26px;
+    background-image: url(../img/star_black.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.star_grey {
+    background-image: url(../img/star_grey.png);
+}
+
+.portfolio {
+    background-color: #F6F6F6;
+}
+
+.store {
+    width: 100%;
+}
+
+.heading {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.links {
+    width: 100%;
+    max-width: 310px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0;  
+}
+
+.button {
+    background: #070707;
+    color: #FFFFFF;
+    width: 180px;
+    height: 44px;
+    border-radius: 22px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+.social_group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.text_footer {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 19px;
+    color: #828282;
+    
+
+}
