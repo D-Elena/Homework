@@ -23,7 +23,7 @@ ul {
     list-style: none;
 }
 
-/*Core styles*/
+-----------------/*Core styles*/--------------
 
 body {
     background-color: white;
@@ -38,10 +38,9 @@ body {
     width: 100%;
     max-width: 970px;
     margin: 0 auto;
-    text-align: center;
 }
 
-/*Header*/
+----------------/*Header*/---------------------
 
 .nav_list {
     display: flex;
@@ -68,92 +67,211 @@ body {
     color: #070707;
 }
 
-/*Main*/
+------------------/*Main*/---------------------
+
+.hero {
+    padding-top: 30px;
+}
+
+.hero_title {
+    font-size: 48px;
+    line-height: 65px;
+    font-weight: 700;
+    margin: 0 0 50px 0;
+}
 
 .site_title {
-    font-weight: bold;
-    margin: 0;
-    
+    font-size: 34px;
+    line-height: 46px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.about_me .site_title {
+    margin: 0 0 50px 0;
 }
 
 .first_screen {
     width: 100%;
-    margin-top: 50px;
 }
 
 .about_me {
     background-color: #F6F6F6;
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
-.text {
+.about_content {
     width: 100%;
     max-width: 480px;
     margin: 0 auto;
-    padding: 50px 0 100px;
+    text-align: center;
 }
 
-.text_item:not(:last-child) {
-    padding-bottom: 30px;
+.about_text {
+    font-size: 18px;
+    line-height: 25px;
 }
+
+.about_text:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.about_text span {
+    display: block;
+}
+
+.about_text:nth-of-type(2) {
+    max-width: 410px;
+    margin: 0 auto 30px;
+}
+
+.about_text:nth-of-type(3) {
+    max-width: 313px;
+    margin: 0 auto 30px;
+}
+
+------------------/*SKILLS*/-----------------------
 
 .skills {
-    display: flex;
-    justify-content: space-between;
+    padding: 100px 0;  
 }
 
-.skills_item {
-    margin: 100px 0;
+.skills .site_title {
+    margin: 0 0 20px 0;
 }
 
-.heading_skills {
-    padding-bottom: 50px;
+.skills_subtitle {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.adobe {
+.slills_item {
     width: 100%;
     max-width: 170px;
-    display: flex;
-    flex-direction: column;
 }
 
-.star {
-    display: flex;
+.skills_img img {
+    width: 100%;
+    display: block;
+}
+
+.skills_img {
+    width: 80px;
+    margin: 0 auto 25px;
+}
+
+.skills_img_item {
+    width: 65px;
+}
+
+.skill_name {
+    color: #828282;
+    font-weight: 700;
+    max-width: 80px;
+    text-align: center;
+    margin: 0 auto 60px;
+}
+
+.skill_name_item {
+    max-width: 95px;
 }
 
 .star_black {
+    display: inline-block;
     width: 26px;
     height: 26px;
-    background-image: url(../img/star_black.png);
-    background-size: 100%;
+    background-image: url(../img/star_black.svg);
+    background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
-.star_grey {
-    background-image: url(../img/star_grey.png);
+.skill_rating  {
+    font-size: 0;
 }
+
+.star_black:not(:last-child) {
+    margin-right: 10px;
+}
+
+.star_grey {
+    background-image: url(../img/star_grey.svg);
+}
+
+.skills_conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+----------------------/*PORTFOLIO*/-------------------
 
 .portfolio {
     background-color: #F6F6F6;
+    padding: 100px 0;
 }
 
-.store {
+.portfolio .site_title {
+    margin: 0 0 50px 0;
+}
+
+.portfolio_text {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.portfolio_img {
     width: 100%;
+    margin: 0 0 40px 0;
+}
+
+.portfolio_content {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.portfolio_content:nth-of-type(1) {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 70px;
+}
+
+.portfolio_content:nth-of-type(3) {
+    margin: 0 auto;
+}
+
+------------/*FOOTER*/-------------------
+
+.footer {
+    padding: 100px 0;
+}
+
+.heading .site_title {
+    margin: 0 0 20px;
 }
 
 .heading {
     width: 100%;
-    max-width: 280px;
-    margin: 0 auto;
-    padding-top: 100px;
+    max-width: 265px;
+    margin: 0 auto 60px;
 }
 
-.links {
+.contacts_text {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.contacts_links {
     width: 100%;
     max-width: 310px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     text-align: center;
-    padding: 60px 0;  
 }
 
 .button {
@@ -164,6 +282,10 @@ body {
     border-radius: 22px;
     letter-spacing: 0.1em;
     cursor: pointer;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    font-weight: 700;
 }
 
 .social_group {
@@ -179,6 +301,5 @@ body {
     font-size: 14px;
     line-height: 19px;
     color: #828282;
-    
-
+    text-align: center;
 }
