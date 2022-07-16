@@ -23,7 +23,7 @@ ul {
     list-style: none;
 }
 
------------------/*Core styles*/--------------
+/*Core styles*/
 
 body {
     background-color: white;
@@ -40,9 +40,9 @@ body {
     margin: 0 auto;
 }
 
-----------------/*Header*/---------------------
+/*Header*/
 
-.nav_list {
+.navigation_list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -67,7 +67,7 @@ body {
     color: #070707;
 }
 
-------------------/*Main*/---------------------
+/*Main*/
 
 .hero {
     padding-top: 30px;
@@ -130,7 +130,7 @@ body {
     margin: 0 auto 30px;
 }
 
-------------------/*SKILLS*/-----------------------
+/*SKILLS*/
 
 .skills {
     padding: 100px 0;  
@@ -206,7 +206,7 @@ body {
     justify-content: space-between;
 }
 
-----------------------/*PORTFOLIO*/-------------------
+/*PORTFOLIO*/
 
 .portfolio {
     background-color: #F6F6F6;
@@ -244,7 +244,7 @@ body {
     margin: 0 auto;
 }
 
-------------/*FOOTER*/-------------------
+/*FOOTER*/
 
 .footer {
     padding: 100px 0;
