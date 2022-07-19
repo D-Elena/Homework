@@ -49,6 +49,10 @@ body {
     box-sizing: border-box;
 }
 
+.form_item:not(:last-child) {
+    margin-right: 15px;
+}
+
 .label {
     display: inline-grid;
     font-weight: 400;
