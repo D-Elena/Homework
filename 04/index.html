@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="form_container">
+                <div class="form_item">
+                    <h1 class="title_forms">Create an Account</h1>
+                    <div class="container_form">
+                        <form action="#" method="GET"></form>
+                            <label class="label">First Name
+                                <input class="input_item" type="text" name="FirstName">
+                            </label>
+                            
+                            <label class="label">Last Name
+                                <input class="input" type="text" name="LastName">
+                            </label>
+                            
+                            <label class="label">E-mail
+                                <input class="input" type="email" name="ClientEmail">
+                            </label>
+                            <p class="text_form">We'll never share your email with anyone else.</p>
+                    </div>
+                    
+                    <div class="container_form_two">
+                        <label class="radio_lebel">
+                            <input class="radio-input" type="radio" name="Gender">
+                            <span class="fake-radio"></span>
+                            Male
+                        </label>
+                        <label class="radio_lebel">
+                            <input class="radio-input" type="radio" name="Gender">
+                            <span class="fake-radio"></span>
+                            Female
+                        </label>
+                    </div>
+                    
+                    <div class="container_form_three">
+                        <label class="label">Country
+                            <select name="Select" class="input">
+                                <option>Select</option>
+                                <option>Ukraine</option>
+                                <option>Canada</option>
+                                <option>Spain</option>
+                            </select>
+                        </label>
+                        <label class="label">City
+                            <input type="text" class="input">
+                        </label>
+                    </div>
+                    
+                    <div class="terms">
+                        <button class="button">Sign Up</button>
+                        <p class="subtitle_text">By clicking the 'Sign Up' button, you confirm that you accept our <span class="text_blue">Terms of Use</span> and <span class="text_blue">Privacy Policy</span>.</p>
+                    </div>
+                    <div class="login">
+                        <span class="account_text">Have an account?</span>
+                        <a class="login_text" href="#">Log In</a>
+                    </div>
+                </div>
+
+                <div class="form_item">
+                    <h2 class="title_forms">Profile</h2>
+                    <div class="forms_photo">
+                        <img src="./assets/img/image.svg" class="img_photo" alt="photo">
+                        <div class="lebel_wrapper">
+                            <label class="lebel">
+                                <div class="input_wrapper">
+                                    <input type="text" class="input" name="clientPhoto">
+                                </div>
+                                <span class="text_form">Up to 1 MB (300x300 px)</span>
+                            </label>
+                        </div>
+                        <img src="./assets/img/delete.svg" alt="delete">
+                    </div>
+                        <div>
+                            <form action="#" method="GET"></form>
+                            <label class="label">First Name
+                                <input class="input" type="text" name="FirstName">
+                            </label>
+                            
+                            <label class="label">Last Name
+                                <input class="input" type="text" name="LastName">
+                            </label>
+                        </div>
+                        <div>
+                            <label class="label">Country
+                                <select name="Select" class="input">
+                                    <option>Select</option>
+                                    <option>Ukraine</option>
+                                    <option>Canada</option>
+                                    <option>Spain</option>
+                                </select>
+                            </label>
+                            <label class="label">City
+                                <input type="text" class="input">
+                            </label>
+                        </div>
+                        <div>
+                            <label class="label">Zip Code
+                                <input type="text" class="input">
+                            </label> 
+
+                            <label class="label">Phone Number
+                                <input class="input" type="number" name="FirstName">
+                            </label>
+                        </div>
+                        <button class="button_item">Update</button>
+                </div>
+                
+            </div>
+        </div>
+        
+    </main>
+    
+</body>
+</html>
