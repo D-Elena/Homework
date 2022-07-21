@@ -1,0 +1,137 @@
+/*Normalize*/
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/*Core styles*/
+
+body {
+    background-color: white;
+    color: #070707;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation_list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 13px;
+    margin-bottom: 70px;
+}
+
+.lang {
+    font-family: 'Tourney';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    padding: 13px 100px 0 0;
+}
+
+.site_nav {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    padding-top: 13px;
+}
+
+.site_nav a:not(.site_nav a:last-child)::after {
+    content: '/';
+    top: 0;
+    right: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.lang .site_nav {
+    padding: 13px 0;
+}
+
+.img_logo {
+    width: 100%;
+    max-width: 238px;
+}
+
+.text_grey {
+    background-color: #DADADA;
+}
+
+.title {
+    font-family: 'Francois One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.chapter_one .text {
+    margin-bottom: 70px;
+}
+
+.chapter_two .text {
+    margin-bottom: 70px;
+}
+
+.chapter_three {
+    margin-bottom: 70px;
+}
+
+.chapter_three .text:not(:last-child) {
+    padding-bottom: 40px;
+}
+
+.chapter_four .text:not(:last-child) {
+    padding-bottom: 40px;
+}
+
+.chapter_four .text:nth-child(3) {
+    padding-bottom: 90px;
+}
+
+
+
+.subtitle {
+    font-family: 'Farro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.text {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    color: #000000;
+}
