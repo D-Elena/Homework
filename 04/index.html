@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -17,7 +22,7 @@
                     <div class="container_form">
                         <form action="#" method="GET"></form>
                             <label class="label">First Name
-                                <input class="input_item" type="text" name="FirstName">
+                                <input class="input" type="text" name="FirstName">
                             </label>
                             
                             <label class="label">Last Name
@@ -45,12 +50,15 @@
                     
                     <div class="container_form_three">
                         <label class="label">Country
-                            <select name="Select" class="input">
-                                <option>Select</option>
-                                <option>Ukraine</option>
-                                <option>Canada</option>
-                                <option>Spain</option>
-                            </select>
+                            <div class="relative_wrapper">
+                                <select name="Select" class="input select_none">
+                                    <option>Сhoose country</option>
+                                    <option>Ukraine</option>
+                                    <option>Canada</option>
+                                    <option>Spain</option>
+                                </select>
+                                <span class="fake-arrow"></span>
+                            </div>
                         </label>
                         <label class="label">City
                             <input type="text" class="input">
@@ -59,7 +67,7 @@
                     
                     <div class="terms">
                         <button class="button">Sign Up</button>
-                        <p class="subtitle_text">By clicking the 'Sign Up' button, you confirm that you accept our <span class="text_blue">Terms of Use</span> and <span class="text_blue">Privacy Policy</span>.</p>
+                        <p class="subtitle_text">By clicking the 'Sign Up' button, you confirm that you accept our <a href="#" class="text_blue">Terms of Use</a> and <a href="#" class="text_blue">Privacy Policy</a>.</p>
                     </div>
                     <div class="login">
                         <span class="account_text">Have an account?</span>
@@ -74,31 +82,35 @@
                         <div class="lebel_wrapper">
                             <label class="lebel">
                                 <div class="input_wrapper">
-                                    <input type="text" class="input" name="clientPhoto">
+                                    <input type="file" class="input" name="clientPhoto">
+                                    <span class="fake_file"></span>
                                 </div>
                                 <span class="text_form">Up to 1 MB (300x300 px)</span>
                             </label>
                         </div>
-                        <img src="./assets/img/delete.svg" alt="delete">
+                        <img src="./assets/img/delete.svg" class="delete" alt="delete">
                     </div>
                         <div>
                             <form action="#" method="GET"></form>
-                            <label class="label">First Name
+                            <label class="label">Name
                                 <input class="input" type="text" name="FirstName">
                             </label>
                             
-                            <label class="label">Last Name
-                                <input class="input" type="text" name="LastName">
+                            <label class="label">E-mail
+                                <input class="input" type="email" name="ClientEmail">
                             </label>
                         </div>
                         <div>
                             <label class="label">Country
-                                <select name="Select" class="input">
-                                    <option>Select</option>
-                                    <option>Ukraine</option>
-                                    <option>Canada</option>
-                                    <option>Spain</option>
-                                </select>
+                                <div class="relative_wrapper">
+                                    <select name="Select" class="input select_none">
+                                        <option>Сhoose country</option>
+                                        <option>Ukraine</option>
+                                        <option>Canada</option>
+                                        <option>Spain</option>
+                                    </select>
+                                    <span class="fake-arrow"></span>
+                                </div>
                             </label>
                             <label class="label">City
                                 <input type="text" class="input">
