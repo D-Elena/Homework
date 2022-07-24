@@ -77,10 +77,11 @@ a {
     height: 38px;
     box-sizing: border-box;
     margin-top: 7px;
+    outline: none;
 }
 
-.input:hover {
-    border: 2px solid #007BFF;
+.input:focus {
+    border: 1px solid #007BFF;
 }
 
 .text_form {
@@ -120,14 +121,14 @@ a {
     align-items: center;
     width: 20px;
     height: 20px;
-    border: 6px solid #007BFF;
+    border: 1px solid #E4E4E4;
     border-radius: 50%;
     box-sizing: border-box;
     margin-right: 8px;
 }
 
 .radio-input:checked + .fake-radio {
-    border: 1px solid #E4E4E4;
+    border: 6px solid #007BFF;
 }
 
 .container_form_three {
@@ -152,10 +153,9 @@ a {
     height: 20px;
     background-image: url(../img/arrow.svg);
     background-repeat: no-repeat;
-    block-size: 100%;
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 17px;
 }
 
 .relative_wrapper {
