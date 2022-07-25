@@ -18,6 +18,8 @@ ul {
     padding: 0;
 }
 
+* {transition: all .1s ease-in;}
+
 .container {
     width: 100%;
     margin: 0 auto;
