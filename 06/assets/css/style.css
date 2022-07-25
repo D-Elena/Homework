@@ -1,0 +1,154 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #3B3F45;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    background: #4A4F56;
+    color: #FF8984;
+    text-align: center;
+    padding: 19px 0 12px 0;
+    margin-bottom: 20px;
+}
+
+.title_header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+    padding-bottom: 4px;
+}
+
+.text_header {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+}
+
+.shopping_list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.span_text::before {
+    content: '(';
+}
+
+.span_text::after {
+    content: ')';
+}
+
+.span_text {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+    padding-left: 3px;
+}
+
+.wrapper {
+    width: 534px;
+    position: relative;
+}
+.wrapper2 label {
+    background-color: #7A7593;;
+}
+
+.input {
+    position: absolute;
+    top: 11px;
+    left: 15px;
+    z-index: 3;
+    opacity: 0;
+}
+
+.label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    background-color: #88839E;
+    padding: 11px 0 13px 40px;
+ }
+
+.label:hover {
+    background-color: #625E77;
+    border: 2px solid #fff;
+    border-width: 3px 0;
+}
+
+.label:active {
+    background-color: #FF8984;
+}
+
+.fake_checbox {
+    position: absolute;
+    top: 11px;
+    left: 15px;
+    width: 19px;
+    height: 19px;
+    background-color: #fff;
+    z-index: 2;
+}
+.fake_checbox:before {
+    content: '';
+    background-image: url(../img/checkbox.svg);
+    background-size: 15px 15px;
+    height: 20px;
+    width: 20px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+}
+
+.input:checked ~ .label {
+    text-decoration: line-through;
+    color: #9B96AC;
+}
+
+.input:checked ~ .label .span_text {
+    color: #9B96AC;
+}
+
+.input:checked ~ .fake_checbox:before {
+    display: block;
+}
+
+.text_item {
+    width: 534px;
+    margin: 0 auto;
+    background: #4A4F56;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FF8984;
+    text-align: center;
+    padding: 12px 0;
+}
