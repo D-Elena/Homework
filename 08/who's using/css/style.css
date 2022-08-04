@@ -128,7 +128,10 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     border-top: 1px solid #BFBFBF;
-    padding-top: 20px;
+    padding: 20px 0;
+    margin-bottom: 80px;
+    gap: 30px;
+    border-bottom: 1px solid #BFBFBF;
 }
 
 
