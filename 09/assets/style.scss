@@ -1,0 +1,197 @@
+@use 'reset';
+@use './fonts/font-face'; 
+
+@mixin text-styling($ff, $fz, $lh, $color, $fw) {
+    font-family: $ff;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
+    font-weight: $fw;
+}
+
+.section_head {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+
+    .head_subtitle {
+        text-align: center;
+        padding-bottom: 15px;
+        display: block;
+        @include text-styling('Raleway', 18px, 24px, #898F8F, 500)
+    }
+
+    .head_title {
+        padding-bottom: 40px;
+        @include text-styling('Roboto', 60px, 66px, #FFCC00, 900)
+    }
+
+    .head_icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::before{
+            content: '';
+            border-bottom: 1px solid #FFCC00;
+            width: 210px;
+            display: block;
+        }
+        &::after{
+            content: '';
+            border-bottom: 1px solid #FFCC00;
+            width: 210px;
+            display: block;
+        }
+
+        img {
+            padding: 0 5px;
+        }
+    }
+}
+
+.section_content {
+    display: flex;
+}
+
+
+.content_img {
+    padding: 80px 0 80px 85px;
+    width: 50%;
+    position: relative;
+
+    .img_wrapper {
+        width: 430px;
+        height: 430px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+        .img_photo {
+            width: 100%;
+            max-width: 400px;
+            height: 100%;
+            max-height: 400px;
+        }
+
+        .svg_line1 {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .svg_line2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .svg_line3 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .svg_line4 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+}
+
+.content_line {
+    display: block;
+    max-height: 560px;
+    width: 1px;
+    background-color: #FC0;
+}
+
+.content_block {
+    width: 50%;
+    padding: 70px 0 0 85px;
+    text-align: center;
+}
+
+.content_block1 {
+    margin-bottom: 30px;
+    text-transform: capitalize;
+
+    .content_title {
+        margin-bottom: 30px;
+        @include text-styling('Roboto', 36px, 42px, #666666, 900)
+    }
+
+    .title_line {
+        width: 100px;
+        height: 1px;
+        background-color: #FFCC00;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .content_subtitle {
+        @include text-styling('Raleway', 24px, 36px, #666666, 400)
+    }
+}
+
+
+.content_block2 {
+    margin-bottom: 50px;
+
+    .svg_path {
+        padding-right: 5px;
+       
+        &:hover {
+            stroke: #FFCC00;
+            transform: scale(1.1);
+            
+        }
+    }
+}
+
+.content_block3 {
+    .content_text {
+        margin-bottom: 20px;
+        @include text-styling('Raleway', 14px, 24px, #333333, 500)
+    }
+
+    .text_line {
+        border-bottom: 4px solid #FFCC00;
+        width: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 30px;
+        position: relative;
+        
+        &::before, &::after {
+            content: '';
+            display: inline-block;
+            border-bottom: 4px solid #FFCC00;
+            width: 10px;
+            position: absolute;
+        }
+
+        &::before {
+            top: 0;
+            right: 25px;
+        }
+        &::after{
+            top: 0;
+            left: 25px;
+        }
+    }
+
+    .btn {
+        border: 1px solid #FFCC00; 
+        padding: 5px 10px;
+        text-transform: uppercase;
+        @include text-styling('Open Sans', 14px, 14px, #666666, 700)
+    }
+}
+
+
+
+
