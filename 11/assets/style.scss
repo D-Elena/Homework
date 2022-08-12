@@ -1,0 +1,370 @@
+@use 'reset';
+@use './fonts/font-face.scss';
+@use 'media';
+
+
+@mixin text-styling($ff, $fz, $lh, $color, $fw, $tt, $ls) {
+    font-family: $ff;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
+    font-weight: $fw;
+    text-transform: $tt;
+    letter-spacing: $ls;
+}
+
+.header {
+    background: #fff;
+    padding: 40px 0;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        display: inline-block;
+        width: 170px;
+    }
+    
+    .nav_list ul {
+        column-gap: 40px;
+    }
+
+    .nav_list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .list_item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .nav_link {
+        &:hover {
+            color: lightseagreen;
+        }
+
+        @include text-styling(Lato, 14px, 17px, #000000, 400, uppercase,none)
+    }
+    
+    .search_link img {
+        width: 17px;
+        display: inline-block;
+        margin-left: 80px;
+    }
+}
+
+section {
+    margin-bottom: 90px;
+}
+
+.section_platform {
+    .platform_title {
+        margin-bottom: 70px;
+        @include text-styling('Red Hat Display', 48px, 64px, #000000, 600, none, 0.05em)
+    }
+}
+
+.project_block {
+    width: 50%;
+}
+
+.title {
+    padding-bottom: 50px;
+    @include text-styling('Red Hat Display', 28px, 166%, #000000, 600, none, 0.1em)
+}
+
+.text {
+    @include text-styling('Lato', 19px, 32px, #565656, 400, none, 0.05em)
+}
+
+.text:not(:last-child) {
+    padding-bottom: 40px;
+}
+
+.section_research img {
+    margin-bottom: 20px;
+}
+
+.section_sketches img {
+    margin-bottom: 20px;
+}
+
+.section_final img {
+    margin-bottom: 20px;
+}
+
+
+.footer {
+    background-color: #F4F4F4;
+    padding: 70px 0 0 0;
+
+    .blocks {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .block_left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_title {
+        padding-bottom: 30px;
+        @include text-styling('Red Hat Display', 48px, 64px, #000000, 400, none, 0.05em)
+    }
+
+    .footer_link {
+        @include text-styling('Lato', 16px, 166%, #000000, 400, none, 0.1em)
+    }
+
+    .footer_link:not(:last-child) {
+        padding-bottom: 15px;
+    }
+
+    .block_right {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .list_item {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #565656;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            transition: all .5s ease-in;
+            border: 2px solid burlywood;
+            background-color: #565656;
+        }
+    }
+
+    .list_item:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    .subtitle {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    body {
+        padding: 0 15px;
+    }
+
+    .header {
+        padding: 18px 0 70px 0;
+    }
+
+    section:not(:last-child) {
+        margin-bottom: 70px;
+    }
+
+    .nav_list .list_item {
+        display: none;
+    }
+
+    .section_platform .platform_title {
+        margin-bottom: 50px;
+        @include text-styling('Red Hat Display', 33px, 50px, #000000, 600, none, 0.05em)
+    }
+
+    .section_project {
+        .project_block {
+            width: 100%;
+        }
+    }
+
+    .section_research {
+        img {
+            background-size: cover;
+            background-position: center;
+        }
+
+    .section_final {
+        margin-bottom: 90px;
+    }
+
+    }
+
+    .footer .blocks {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+
+        .block_left {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        .block_right {
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    .footer .footer_title {
+        padding-bottom: 20px;
+
+    }
+
+    .footer .subtitle {
+        padding-bottom: 50px;
+    }
+
+
+    .hamburger{
+        &.open {
+            .h_line {
+                display: none;
+            }
+            &::before {
+                transform: rotate(45deg) translate(20px, 15px);
+                background-color: vars.$text-color-heading;
+            }
+            &::after {
+                transform: rotate(-45deg) translate(6px, -1px);
+                background-color: vars.$text-color-heading;
+            }
+        }
+    }
+
+    .list_item{
+        position: fixed;
+        background: #FFFFFF;
+        right: -1000px;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: 600px;
+        flex-direction: column;
+        z-index: 1;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: all .8s ease;
+        &.open{
+            width: 100%;
+            right: 0;
+        }
+        .nav_link{
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+        font-weight: 600;
+        position: relative;
+        font-size: 20px;
+        &:hover{
+            ::after{
+                content: '';
+                width: 10%;
+                border-bottom: 1px solid #000000;
+                bottom: 10px;
+                right: 50%;
+                transform: translateX(50%);
+                position: absolute;
+                justify-content: center;
+            }
+        }
+    }
+    }
+
+    .nav_list .nav_link {
+        @include text-styling(Lato, 20px, 22px, #000000, 600, uppercase)
+    }
+
+    li {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        &:hover {
+            background-color: rgb(178, 246, 242);
+            .nav_list .nav_link {
+                color: #fff;
+                }
+            }
+        }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    body {
+        padding: 0 10px;
+    }
+
+    section {
+        margin-bottom: 70px;
+    }
+
+    .header .nav_list {
+        display: none;
+    }
+
+    .header {
+        padding: 18px 0;
+    }
+
+    .section_platform .platform_title {
+        margin-bottom: 40px;
+    }
+
+    .project_block {
+        width: 100%;
+    }
+
+    .section_project {
+        .title {
+            padding-bottom: 40px;
+        }
+    }
+
+        .footer {
+        padding-top: 50px;
+
+        .footer_title {
+        @include text-styling('Red Hat Display', 32px, 42px, #000000, 400, none, 0.05em)
+        }
+
+        .blocks .block_left {
+            margin-bottom: 40px;
+        }
+
+        
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+    
