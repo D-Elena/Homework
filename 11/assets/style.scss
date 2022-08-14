@@ -239,15 +239,17 @@ section {
         &.open {
             .h_line {
                 display: none;
+
+                &::before {
+                    transform: rotate(45deg) translate(20px, 15px);
+                    background-color: vars.$text-color-heading;
+                }
+                &::after {
+                    transform: rotate(-45deg) translate(6px, -1px);
+                    background-color: vars.$text-color-heading;
+                }
             }
-            &::before {
-                transform: rotate(45deg) translate(20px, 15px);
-                background-color: vars.$text-color-heading;
-            }
-            &::after {
-                transform: rotate(-45deg) translate(6px, -1px);
-                background-color: vars.$text-color-heading;
-            }
+            
         }
     }
 

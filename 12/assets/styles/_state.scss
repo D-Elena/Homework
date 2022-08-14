@@ -1,0 +1,37 @@
+.item_city, .item_nature, .item_people {
+    &:hover {
+        img {
+           height: 100%; 
+           filter: brightness(1);
+            transition: all .5s ease;
+        }
+
+        .icon {
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .icon_heart, .icon_download {
+            display: flex;
+            justify-content: center;
+            padding: 12px;
+            background: rgba(191, 191, 191, 0.7);
+            border-radius: 8px;
+            margin: 25px 20px 0;
+            cursor: pointer;
+            &:hover{
+                background: #E0E0E0;
+            }
+        }
+    }
+}
+
+
+
+
+
