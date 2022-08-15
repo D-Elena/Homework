@@ -152,8 +152,15 @@ section {
         align-items: center;
         &:hover {
             transition: all .5s ease-in;
-            border: 2px solid burlywood;
+            border: 2px solid black;
             background-color: #565656;
+        }
+        
+        .icon-instagram-icon::before {
+            &:hover {
+                content: "\e900";
+                color: #fff;
+            }
         }
     }
 
@@ -253,7 +260,7 @@ section {
         }
     }
 
-    .list_item{
+    /*.list_item{
         position: fixed;
         background: #FFFFFF;
         right: -1000px;
@@ -292,7 +299,7 @@ section {
             }
         }
     }
-    }
+    }*/
 
     .nav_list .nav_link {
         @include text-styling(Lato, 20px, 22px, #000000, 600, uppercase)

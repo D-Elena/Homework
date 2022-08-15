@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .item_city:hover img, .item_nature:hover img, .item_people:hover img {
   height: 100%;
   filter: brightness(1);
@@ -23,4 +24,10 @@
 }
 .item_city:hover .icon_heart:hover, .item_city:hover .icon_download:hover, .item_nature:hover .icon_heart:hover, .item_nature:hover .icon_download:hover, .item_people:hover .icon_heart:hover, .item_people:hover .icon_download:hover {
   background: #E0E0E0;
+  color: #E0E0E0;
+}
+
+.icon-icon-download:before:active {
+  content: "";
+  color: red;
 }
