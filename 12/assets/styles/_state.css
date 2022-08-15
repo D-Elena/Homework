@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .item_city:hover img, .item_nature:hover img, .item_people:hover img {
   height: 100%;
   filter: brightness(1);
@@ -13,7 +12,7 @@
   display: flex;
   justify-content: space-between;
 }
-.item_city:hover .icon_heart, .item_city:hover .icon_download, .item_nature:hover .icon_heart, .item_nature:hover .icon_download, .item_people:hover .icon_heart, .item_people:hover .icon_download {
+.item_city .icon_heart, .item_city .icon_download, .item_nature .icon_heart, .item_nature .icon_download, .item_people .icon_heart, .item_people .icon_download {
   display: flex;
   justify-content: center;
   padding: 12px;
@@ -22,12 +21,14 @@
   margin: 25px 20px 0;
   cursor: pointer;
 }
-.item_city:hover .icon_heart:hover, .item_city:hover .icon_download:hover, .item_nature:hover .icon_heart:hover, .item_nature:hover .icon_download:hover, .item_people:hover .icon_heart:hover, .item_people:hover .icon_download:hover {
+.item_city .icon_heart:hover, .item_city .icon_download:hover, .item_nature .icon_heart:hover, .item_nature .icon_download:hover, .item_people .icon_heart:hover, .item_people .icon_download:hover {
   background: #E0E0E0;
-  color: #E0E0E0;
 }
 
-.icon-icon-download:before:active {
-  content: "";
+.icon_heart:hover .icon-icon-heart::before {
+  color: red;
+}
+
+.icon_download:hover .icon-icon-download::before {
   color: red;
 }

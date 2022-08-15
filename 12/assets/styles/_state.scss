@@ -15,6 +15,7 @@
             display: flex;
             justify-content: space-between;
         }
+    }
         
         .icon_heart, .icon_download {
             display: flex;
@@ -26,23 +27,27 @@
             cursor: pointer;
             &:hover{
                 background: #E0E0E0;
-                color: #E0E0E0;
             }
         }
-
     }
-}
 
-.icon-icon-download {
-    &:before {
-        &:active {
-            content: "\e901";
-            color: red;
+
+.icon_heart {
+    &:hover {
+        .icon-icon-heart {
+            &::before {
+                color: red;
+            }
         }
     }
-}
+} 
 
-
-
-
-
+.icon_download {
+    &:hover {
+        .icon-icon-download {
+            &::before {
+                color: red;
+            }
+        }
+    }
+} 
