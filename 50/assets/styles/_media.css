@@ -172,6 +172,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 20px;
 }
 .icon_item:hover {
   transition: all 0.3s ease-in;
@@ -283,7 +284,7 @@
   .list_item li {
     width: 100%;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
   }
   .list_item li:hover {
     background-color: #c0eeeb;
@@ -363,12 +364,12 @@
     margin-bottom: 70px;
   }
 
-  .header .nav_list {
-    display: none;
-  }
-
   .header {
     padding: 18px 0;
+  }
+
+  .search_link {
+    display: none;
   }
 
   .section_platform .platform_title {

@@ -88,7 +88,7 @@
         li {
             width: 100%;
             text-align: center; 
-            padding: 10px 0;
+            padding: 20px 0;
             &:hover {
                 background-color: rgb(192, 238, 235);
                 a {
@@ -169,12 +169,12 @@
         margin-bottom: 70px;
     }
     
-    .header .nav_list {
-        display: none;
-    }
-    
     .header {
         padding: 18px 0;
+    }
+
+    .search_link {
+        display: none;
     }
 
     .section_platform .platform_title {

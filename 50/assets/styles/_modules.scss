@@ -148,6 +148,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 20px;
+
     &:hover {
         transition: all .3s ease-in;
         border: 2px solid rgb(88, 86, 86);
