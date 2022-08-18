@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/style.min.css">
+    <link rel="stylesheet" href="./assets/styles/index.min.css">
     <link rel="stylesheet" href="./assets/fonts/iconmoon/style.css">
 </head>
 <body>
@@ -25,9 +25,9 @@
                 <a class="search_link" href="#">
                     <img src="./assets/img/search.svg" alt="">
                 </a>
-                <a class="hamburger" id="hamburger" href="#">
-                    <span class="h_line"></span>
-                </a>
+                <span class="burger" id="burger">
+                    <span class="line"></span>
+                </span>
             </nav>
         </div>
     </header>
@@ -122,16 +122,16 @@
                 </div>
                 <div class="block_right">
                     <ul class="list">
-                        <li class="list_item">
+                        <li class="icon_item">
                             <a class="icon" href="#"><span class="icon-instagram-icon"></span></a>
                         </li>
-                        <li class="list_item">
+                        <li class="icon_item">
                             <a class="icon" href="#"><span class="icon-facebook-icon"></span></a>
                         </li>
-                        <li class="list_item">
+                        <li class="icon_item">
                             <a class="icon" href="#"><span class="icon-twitter"></span></a>
                         </li>
-                        <li class="list_item">
+                        <li class="icon_item">
                             <a class="icon" href="#"><span class="icon-linkedin-icon"></span></a>
                         </li>
                     </ul>
@@ -148,9 +148,9 @@
 
     <script>
         $(document).ready(function() {
-            $('#hamburger').click(function() {
+            $('#burger').click(function() {
                 $('#nav').toggleClass('open');
-                $('#hamburger').toggleClass('open');
+                $('#burger').toggleClass('open');
             })
         });
 </script>
