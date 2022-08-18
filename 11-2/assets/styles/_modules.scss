@@ -1,0 +1,195 @@
+@mixin text-styling($ff, $fz, $lh, $color, $fw, $tt, $ls) {
+    font-family: $ff;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
+    font-weight: $fw;
+    text-transform: $tt;
+    letter-spacing: $ls;
+}
+
+.header {
+    background: #fff;
+    padding: 40px 0; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0; 
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: inline-block;
+    width: 170px;
+}
+
+.nav_list ul {
+    column-gap: 40px;
+}
+
+.nav_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+    
+.list_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+    
+.nav_link {
+    &:hover {
+        color: lightseagreen;
+    }
+    @include text-styling(Lato, 14px, 17px, #000000, 400, uppercase,none)
+}
+    
+.search_link img {
+    width: 17px;
+    display: inline-block;
+    margin-left: 80px;
+}
+
+.burger {
+    display: none;
+}
+
+.section_platform {
+    .platform_title {
+        margin-bottom: 70px;
+        @include text-styling('Red Hat Display', 48px, 64px, #000000, 600, none, 0.05em)
+    }
+}
+
+.project_block {
+    width: 50%;
+}
+
+.title {
+    padding-bottom: 50px;
+    @include text-styling('Red Hat Display', 28px, 166%, #000000, 600, none, 0.1em)
+}
+
+.text {
+    @include text-styling('Lato', 19px, 32px, #565656, 400, none, 0.05em)
+}
+
+.text:not(:last-child) {
+    padding-bottom: 40px;
+}
+
+.section_research img {
+    padding-bottom: 20px;
+}
+
+.section_sketches img {
+    padding-bottom: 20px;
+}
+
+.section_final img {
+    padding-bottom: 20px;
+}
+
+.footer {
+    background-color: #F4F4F4;
+    padding: 70px 0 0 0;
+}
+
+.blocks {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.block_left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+    
+.footer_title {
+    padding-bottom: 30px;
+    @include text-styling('Red Hat Display', 48px, 64px, #000000, 400, none, 0.05em)
+}
+        
+.footer_link {
+    @include text-styling('Lato', 16px, 166%, #000000, 400, none, 0.1em)
+}
+            
+.footer_link:not(:last-child) {
+    padding-bottom: 15px;
+}
+            
+.block_right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon_item {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #565656;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        transition: all .3s ease-in;
+        border: 2px solid rgb(88, 86, 86);
+        background-color: #565656;
+
+        .icon-instagram-icon {
+            &::before {
+                color: #fff;
+            }
+        }
+
+        .icon-facebook-icon {
+            &::before {
+                color: #fff;
+            }
+        }
+
+        .icon-twitter {
+            &::before {
+                color: #fff;
+            }
+        }
+
+        .icon-linkedin-icon {
+            &::before {
+                color: #fff;
+            }
+        }
+    }
+
+}       
+
+.list_item:not(:last-child) {
+    margin-right: 25px;
+}           
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.burger {
+    display: none;
+}
