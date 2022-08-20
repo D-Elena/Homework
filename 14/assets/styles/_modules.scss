@@ -1,0 +1,489 @@
+@mixin text-styling($ff, $fz, $lh, $color, $fw, $ls) {
+    font-family: $ff;
+    font-size: $fz;
+    line-height: $lh;
+    color: $color;
+    font-weight: $fw;
+    letter-spacing: $ls;
+}
+
+.header {
+    background: #fff;
+    padding: 40px 0; 
+    /*position: fixed;*/
+    width: 100%;
+    top: 0;
+    left: 0; 
+}
+
+.header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: inline-block;
+    width: 177px;
+}
+
+.list_item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    li {
+        margin-right: 40px;
+    }
+}
+
+.nav_link {
+    @include text-styling('Jost', 20px, 30px, #292F36, 400, 0.4px)
+}
+
+.section_interior {
+    background-image: url(../img/room.jpg);
+    background-repeat: no-repeat;
+}
+
+.interior_content {
+    width: 100%;
+    max-width: 595px;
+    padding: 195px 0 250px 0;
+    
+    
+    .interior_title {
+        padding-bottom: 20px;
+        @include text-styling('DM Serif Display', 80px, 96px, #292F36, 400, 0.22px)
+    }
+
+    .interior_text {
+        margin-bottom: 35px;
+        @include text-styling('Jost', 22px, 33px, #4D5053, 400, 0.22px)
+    }
+
+    .interior_button {
+        background-color: #292F36;
+        padding: 22px 67px 22px 35px;
+        border: 2px solid #292F36;
+        border-radius: 18px;
+        margin-top: 35px;
+        @include text-styling('Jost', 18px, 27px, #FFFFFF, 400, 0.72px)
+    }
+}
+
+.text_cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 175px 50px;
+}
+
+.cards_item {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+
+    .card_title {
+        padding-bottom: 20px;
+        @include text-styling('DM Serif Display', 25px, 39px, #292F36, 400, 0.22px)
+    }
+
+    .card_text {
+        padding-bottom: 70px;
+        @include text-styling('Jost', 22px, 33px, #4D5053, 400, 0.22px)
+    }
+
+    .card_link {
+        @include text-styling('Jost', 18px, 27px, #4D5053, 400, 0.36px)
+    }
+}
+
+.cards_item:not(:last-child) {
+    margin-right: 70px;
+}
+
+.kitchen_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 140px;
+}
+
+.block_text {
+    width: 43%;
+
+    .kitchen_title {
+        margin: 40px 0;
+        @include text-styling('DM Serif Display', 50px, 65px, #292F36, 400, 0.22px)
+    }
+
+    .kitchen_text {
+        margin-bottom: 30px;
+        @include text-styling('Jost', 22px, 33px, #4D5053, 400, 0.22px)
+    }
+
+    .call {
+        display: flex;
+        margin-bottom: 80px;
+    
+        .call_item {
+            width: 95px;
+            height: 95px;
+            background-color: #F4F0EC;
+            border-radius: 100px;
+        }
+    
+        .call_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 20px;
+    
+            a {
+                @include text-styling('Jost', 24px, 36px, #4D5053, 400, 0.22px)
+            }
+    
+            span {
+                @include text-styling('Jost', 22px, 33px, #4D5053, 400, 0.22px)   
+            }
+        }
+    }
+    
+    .call_link {
+        background-color: #292F36;
+        padding: 22px 67px 22px 35px;
+        border: 2px solid #292F36;
+        border-radius: 18px;
+        margin-top: 35px;
+        @include text-styling('Jost', 18px, 27px, #FFFFFF, 400, 0.72px)
+    }
+}
+
+.block_img {
+    width: 50%;
+}
+
+.section_people {
+    background-color: #F4F0EC;
+    border-radius: 70px;
+
+    .people_title {
+        padding: 103px 0 50px;
+        margin: 0 auto;
+
+        .title {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+            margin: 0 auto;
+            @include text-styling('DM Serif Display', 45px, 58px, #292F36, 400, 0.22px)
+        }
+    }
+}
+
+.people_cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 45px 0px 120px 0px;
+
+    .cards_wrapper {
+        width: 100%;
+        max-width: 355px;
+        background-color: white;
+        border-radius: 30px;
+        padding: 50px 0 45px 35px;
+    }
+
+    .people {
+        display: flex;
+        margin-bottom: 25px;
+
+        img {
+            width: 100%;
+            max-width: 77px;
+            border-radius: 50%;
+        }
+    }
+
+    .people_text {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .people_card_title {
+       @include text-styling('DM Serif Display', 25px, 38px, #292F36, 400, 0.22px) 
+    }
+
+    .people_card_subtitle {
+        @include text-styling('Jost', 18px, 27px, #4D5053, 400, 0.22px)
+    }
+
+    .people_card_text {
+        width: 100%;
+        max-width: 275px;
+        @include text-styling('Jost', 20px, 30px, #4D5053, 400, 0.22px)
+    }
+}
+
+.cards_wrapper:not(:last-child) {
+    margin-right: 15px;
+}
+
+.section_brand {
+    padding: 140px 0 115px 0;
+
+    .wrapper_brand {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        a:hover {
+            transform: scale(1.2);
+        }
+
+        .logo_home {
+            width: 100%;
+            max-width: 132px;
+        }
+
+        .logo_style {
+            width: 100%;
+            max-width: 103px;
+        }
+
+        .logo_brand {
+            width: 100%;
+            max-width: 164px;
+        }
+
+        .logo_nature {
+            width: 100%;
+            max-width: 145px;
+        }
+
+        .logo_classic {
+            width: 100%;
+            max-width: 117px;
+        }
+    }
+}
+
+.section_projects {
+    padding-bottom: 140px;
+    .projects_block {
+        text-align: center;
+        width: 100%;
+        max-width: 785px;
+        margin: 0 auto;
+    }
+
+    .projects_title {
+        margin-bottom: 20px;
+        @include text-styling('DM Serif Display', 47px, 62px, #292F36, 400, 0.22px)
+    }
+
+    .projects_text {
+        margin-bottom: 70px;
+        @include text-styling('Jost', 22px, 33px, #4D5053, 400, 0.22px)
+    }
+
+    .projects_cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .projects_cards:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
+    .projects_cards_item {
+        .cards_img {
+            width: 100%;
+            min-width: 590px;
+        }
+
+        .projects_cards_text {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+        }
+
+        .text_block_title {
+            @include text-styling('DM Serif Display', 24px, 38px, #292F36, 400, 0.22px)
+        }
+
+        .text_block_subtitle {
+            @include text-styling('Jost', 22px, 33px, #4D5053, 400, 0.22px)
+        }
+
+        .arrow {
+            width: 70px;
+            height: 70px;
+            background: #F4F0EC;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .img_arrow {
+                width: 9px;
+                height: 16px;
+            }
+        }
+    }
+}
+
+.projects_cards_item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.section_results {
+    background-color: #F4F0EC;
+    padding: 140px 0;
+
+    .results_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .content_card {
+        width: 100%;
+        max-width: 288px;
+        border-right: 1px solid #CDA274;
+        text-align: center;
+    }
+
+    .content_number {
+        display: block;
+        margin-bottom: 50px;
+        @include text-styling('DM Serif Display', 85px, 128px, #CDA274, 400, 1.7px)
+    }
+
+    .contant_text {
+        @include text-styling('Jost', 22px, 33px, #4D5053, 400, 0.22px)
+    }
+}
+
+.section_blogs {
+    padding: 140px 0;
+    .blogs_content {
+        text-align: center;
+        width: 100%;
+        max-width: 590px;
+        margin: 0 auto;
+    }
+
+    .blogs_content_title {
+        margin-bottom: 20px;
+        @include text-styling('DM Serif Display', 48px, 62px, #292F36, 400, 0.22px)
+    }
+
+    .blogs_content_text {
+        @include text-styling('Jost', 22px, 33px, #4D5053, 400, 0.22px)
+    }
+}
+
+.section_contact {
+    background-color: #292F36;
+    border-radius: 70px;
+    padding: 100px 0 95px 0;
+
+    .contact_block {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .contact_block_title {
+        margin-bottom: 10px;
+        @include text-styling('DM Serif Display', 50px, 75px, #FFFFFF, 400, 0.22px)
+    }
+
+    .contact_block_text {
+        display: block;
+        margin-bottom: 70px;
+        @include text-styling('Jost', 22px, 33px, #FFFFFF, 400, 0.22px)
+    }
+
+    .contact_block_button {
+        background: #CDA274;
+        border: 2px solid #CDA274;
+        box-shadow: 1px 0px 18px rgba(0, 0, 0, 0.2);
+        border-radius: 18px;
+        padding: 20px 67px 20px 35px;
+        margin-top: 30px;
+        @include text-styling('Jost', 18px, 27px, #FFFFFF, 400, 0.22px)
+    }
+}
+
+.footer {
+    padding: 130px 0 110px 0;
+    border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 35px;
+    .footer_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer_logo {
+        width: 100%;
+        max-width: 326px;
+        img {
+            width: 100%;
+            max-width: 177px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .footer_text {
+        margin-bottom: 10px;
+        @include text-styling('Jost', 22px, 33px, #4D5053, 400, 0.22px)  
+    }
+
+    .footer_title {
+        margin-bottom: 20px;
+        @include text-styling('DM Serif Display', 25px, 38px, #292F36, 400, 0.22px)
+    }
+
+    .footer_pages, .footer_explore {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .footer_contact {
+        width: 100%;
+        max-width: 337px;
+
+        a {
+            display: block;
+            margin-bottom: 30px;
+        }
+    }
+    
+    .footer_list {
+        li {
+            padding-bottom: 30px;
+        }
+        @include text-styling('Jost', 22px, 33px, #4D5053, 400, 0.22px)
+    }
+}
+
+.footer_subtitle {
+    display: block;
+    padding-bottom: 35px;
+    text-align: center;
+    @include text-styling('Jost', 22px, 33px, #4D5053, 400, 0.22px)
+}
+
+.footer_link {
+    @include text-styling('Jost', 22px, 33px, #CDA274, 400, 0.22px)
+}
+
+
+
+    
