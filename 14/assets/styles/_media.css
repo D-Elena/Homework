@@ -125,8 +125,6 @@
   text-transform: none;
 }
 .cards_item .card_link {
-  display: flex;
-  justify-content: center;
   font-family: "Jost";
   font-size: 18px;
   line-height: 27px;
@@ -134,11 +132,6 @@
   font-weight: 400;
   letter-spacing: 0.36px;
   text-transform: capitalize;
-}
-.cards_item .card_link img {
-  width: 24px;
-  display: inline-block;
-  padding-left: 10px;
 }
 
 .cards_item:not(:last-child) {
@@ -701,4 +694,160 @@
   font-weight: 400;
   letter-spacing: 0.22px;
   text-transform: capitalize;
+}
+
+@media screen and (max-width: 1366px) {
+  .header {
+    padding: 18px 15px;
+  }
+
+  .nav_list {
+    display: none;
+  }
+
+  .section_interior {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .interior_content {
+    margin: 0 auto;
+  }
+
+  .text_cards {
+    padding: 100px 100px;
+    justify-content: center;
+  }
+
+  .cards_item {
+    margin-right: 0;
+    margin-bottom: 50px;
+    border: 1px solid #CDA274;
+    border-radius: 30px;
+    padding: 20px 20px;
+  }
+
+  .cards_item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .kitchen_content {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .block_text {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  .call {
+    margin: 0 0 0 70px;
+  }
+
+  .call_link {
+    margin-right: 100px;
+    float: right;
+  }
+
+  .block_img {
+    width: 100%;
+  }
+
+  .people_cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards_wrapper {
+    margin-bottom: 30px;
+  }
+
+  .wrapper_brand {
+    flex-direction: column;
+  }
+
+  .logo_item {
+    margin-bottom: 50px;
+  }
+
+  .section_brand {
+    padding: 50px 0;
+  }
+
+  .section_projects {
+    padding-bottom: 50px;
+  }
+
+  .results_content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content_card {
+    margin-bottom: 40px;
+  }
+
+  .section_projects .projects_cards_item {
+    width: 100%;
+  }
+
+  .section_results {
+    padding: 40px 0;
+  }
+
+  .section_blogs {
+    padding: 40px 0;
+  }
+
+  .blog_card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_logo:nth-child(1) {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .footer .footer_pages {
+    width: 50%;
+    text-align: center;
+  }
+
+  .footer .footer_explore {
+    width: 50%;
+    text-align: center;
+  }
+
+  .footer .footer_contact {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer {
+    padding: 50px 0 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .interior_content {
+    padding: 20px 0 20px;
+  }
+
+  .interior_title {
+    font-family: "DM Serif Display";
+    font-size: 50px;
+    line-height: 60px;
+    color: #292F36;
+    font-weight: 400;
+    letter-spacing: 0.22px;
+    text-transform: capitalize;
+  }
+
+  .text_cards {
+    padding: 30px 0;
+  }
 }
