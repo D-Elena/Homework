@@ -1,10 +1,3 @@
-@font-face {
-  font-family: "Delius Unicase";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""), url("../fonts/Delius Unicase/delius-unicase-v26-latin-regular.woff2") format("woff2"), url("../fonts/Delius Unicase/delius-unicase-v26-latin-regular.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 body, html {
   width: 100%;
   height: 100%;
@@ -95,6 +88,10 @@ span {
   height: 100%;
   border-radius: 20px;
   transform: translate(-50%, -50%);
+}
+
+.card_item.flipped {
+  transform: rotateY(180deg);
 }
 
 .card_front {

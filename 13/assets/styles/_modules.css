@@ -39,6 +39,10 @@
   transform: translate(-50%, -50%);
 }
 
+.card_item.flipped {
+  transform: rotateY(180deg);
+}
+
 .card_front {
   position: absolute;
   width: 100%;
