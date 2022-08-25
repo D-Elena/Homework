@@ -41,10 +41,6 @@
     }
 }
 
-.card_item.flipped {
-  transform: rotateY(180deg);
-}
-
 .card_front {
     position: absolute;
     width: 100%;
@@ -60,4 +56,8 @@
     backface-visibility: hidden;
     transform: rotateY(180deg);
     border-radius: 8px;
+}
+
+.card_item.flipped {
+    transform: rotateY(180deg);
 }
