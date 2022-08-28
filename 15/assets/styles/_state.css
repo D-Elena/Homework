@@ -1,3 +1,28 @@
+.logo:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
 .nav_link:hover::after {
   opacity: 1;
+}
+
+.button_wrapper:hover {
+  transform: scaleZ(0.5);
+  transition: all 0.3s ease;
+}
+.button_wrapper:hover .button {
+  background: #689FF2;
+}
+.button_wrapper:hover .button_source {
+  color: #fff;
+}
+
+.bg:hover {
+  background-color: #515773;
+}
+
+.card_item_one:hover, .card_item_two:hover, .card_item_three:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
