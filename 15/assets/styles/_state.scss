@@ -7,6 +7,8 @@
 
 .nav_link {
     &:hover {
+        transform: scale(1.1);
+        transition: all .3s ease; 
         &::after {
             opacity: 1;
         }
@@ -15,7 +17,7 @@
 
 .button_wrapper {
     &:hover {
-        transform: scaleZ(0.5);
+        transform: scale(0.9, 0.9);;
         transition: all .3s ease;
         
         .button {
@@ -35,7 +37,7 @@
 
 .card_item_one, .card_item_two, .card_item_three {
     &:hover {
-        transform: scale(1.1);
+        transform: translateY(-20px);
         transition: all .3s ease;
     }
 }

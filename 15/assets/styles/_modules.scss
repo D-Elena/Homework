@@ -144,6 +144,8 @@
     text-transform: capitalize;
 }
 
+$margin: -270px;
+
 .section_source {
     background-image: url(../img/main-bg.jpg);
     background-repeat: no-repeat;
@@ -151,8 +153,20 @@
 }
 
 .header {
-    backdrop-filter: blur(9px);
     padding: 25px 0;
+    position: relative;
+
+    &::after {
+        content: '';
+        filter: blur(3px);
+        display: inline-block;
+        background: linear-gradient(270deg, rgba(22, 25, 38, 0.5) 0%, rgba(22, 25, 38, 0) 24.1%, rgba(22, 25, 38, 0) 47.19%), rgba(22, 25, 38, 0.02);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
 }
 
 .wrapper {
@@ -171,6 +185,8 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
 }
 
 .list_item li:not(:last-child) {
@@ -194,6 +210,10 @@
         opacity: 0;
         transition: all .5s ease;
     }
+}
+
+.burger {
+    display: none;
 }
 
 .source_content {
@@ -237,18 +257,21 @@
     @include text_button;
 }
 
-.main {
-    background-color: #091221;
+
+.section_info {
+    position: relative;
+    margin-bottom: -270px;
 }
 
 .info_wrapper {
     position: relative;
-    margin-top: -270px;
+    transform: translateY($margin);
 }
 
 .info_img {
     display: flex;
     justify-content: flex-start;
+    
 
     img {
         width: 100%;
@@ -262,9 +285,9 @@
     background: #091221;
     opacity: 0.9;
     position: absolute;
-    top: 0;
+    top: 45px;
+    bottom: 45px;
     left: 400px;
-    top: 40px; 
     z-index: 1;
 }
 
@@ -358,6 +381,14 @@
     margin-bottom: 60px;
 }
 
+.benefits_item:nth-of-type(3) {
+    margin-bottom: 0;
+}
+
+.benefits_item:nth-of-type(4) {
+    margin-bottom: 0;
+}
+
 .benefits_title {
     width: 85%;
     margin-bottom: 30px;
@@ -381,8 +412,7 @@
 
 .quote_content {
     position: relative;
-    padding: 30px 0 0 60px;
-
+    padding: 30px 0 0 55px;
     img {
         width: 100%;
         max-width: 100px;
@@ -461,7 +491,8 @@
     opacity: .9;
     position: absolute;
     left: 400px;
-    top: 40px;
+    top: 45px;
+    bottom: 45px;
     z-index: 1;
 }
 
@@ -597,6 +628,7 @@
 .card_title {
     position: absolute;
     z-index: 2;
+    position: relative;
     @include subtitle_quote;
 }
 
