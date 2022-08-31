@@ -145,6 +145,7 @@
 }
 
 $margin: -270px;
+$margin-bottom: -270px;
 
 .section_source {
     background-image: url(../img/main-bg.jpg);
@@ -260,7 +261,7 @@ $margin: -270px;
 
 .section_info {
     position: relative;
-    margin-bottom: -270px;
+    margin-bottom: $margin-bottom;
 }
 
 .info_wrapper {
