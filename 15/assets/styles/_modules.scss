@@ -180,6 +180,8 @@ $margin-bottom: -270px;
 .logo {
     display: inline-block;
     max-width: 110px;
+    position: relative;
+    z-index: 1;
 }
 
 .list_item {
