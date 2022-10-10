@@ -1,6 +1,6 @@
 //Напиши всі можливі варіанти створення функцій.
 
-//Function expressions, function declarations, стрілкава функція.
+//Function expressions, function declarations, стрілкова функція.
 
 
 

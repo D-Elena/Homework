@@ -1,7 +1,7 @@
 "use strict";
 
 //Напиши всі можливі варіанти створення функцій.
-//Function expressions, function declarations, стрілкава функція.
+//Function expressions, function declarations, стрілкова функція.
 // Створи функцію, яка буде виводити кількість переданих їй аргументів.
 function summArg() {
   console.log(arguments.length);
