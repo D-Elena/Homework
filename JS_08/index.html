@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table {
+            width: 100%;
+            max-width: 300px;
+            margin-top: 50px;
+        }
+        .row {
+            margin-bottom: 10px;
+            background-color: #857f7f;
+            display: flex;
+        }
+        .row span {
+            min-width: 100px;
+            display: inline-block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="textarea">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet placeat ab perferendis quia aspernatur sed earum ea, autem velit rerum, enim magni natus ipsum nobis expedita qui quasi magnam porro.
+        </div>
+    </section>
+    
+    <section>
+        <div class="table">
+            <div class="row">
+                <span class="sortHeader" data-sort="adress">Adress</span>
+                <span class="sortHeader" data-sort="cost">Cost</span>
+                <span class="sortHeader" data-sort="homeDistance">Distance</span>
+            </div>
+        </div>
+    </section>
+    <script src="./js/app.js"></script>
+</body>
+</html>
